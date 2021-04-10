@@ -1,0 +1,10 @@
+
+
+{% for product in products %}
+    {{ product }}
+    {% if loop.index % 3 == 0 %}
+        </br>
+    {% endif %}
+{% endfor %}
+{{ dump (products) }}
+
